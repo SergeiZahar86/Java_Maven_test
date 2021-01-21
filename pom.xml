@@ -29,6 +29,13 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <version>2.4.1</version>
             <scope>test</scope>
+            <!-- исключения так как junit есть отдельноподключенная зависимость-->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 </project>
